@@ -169,8 +169,8 @@ function validateUser() {
   }
 
   // All validations passed
-  return `Congratulations you are now a valid user`;
+  alert(`Congratulations you are now a valid user`);
 }
 
-// Run the validation function
+// this one runs all the validation function we have just did
 validateUser();
