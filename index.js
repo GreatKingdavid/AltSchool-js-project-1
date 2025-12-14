@@ -81,7 +81,7 @@ function validateUser() {
   // Start username validation loop
   //i used a while loop which will ask for username and keep asking if it's wrong
   while (true) {
-    userName = prompt(`Enter a username`);
+    userName = prompt(`Enter a Full name`);
 
     // Check if user cancelled
     if (userName === null) {
@@ -96,7 +96,7 @@ function validateUser() {
 
     // Show error message and loop will prompt again
     alert(
-      "Invalid Username. Username Must not be empty and contain at least 2 words."
+      "Invalid Full name. Full name Must not be empty and contain at least 2 words."
     );
   }
 
