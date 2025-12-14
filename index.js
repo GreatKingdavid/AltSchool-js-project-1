@@ -82,7 +82,7 @@ function validateUser() {
   //i used a while loop which will ask for username and keep asking if it's wrong
   while (true) {
     userName = prompt(`Enter a username`);
-    
+
     // Check if user cancelled
     if (userName === null) {
       alert("Form canceled");
@@ -102,7 +102,7 @@ function validateUser() {
 
   // Email validation loop
   while (true) {
-    userEmail = prompt(`Enter your Email`); 
+    userEmail = prompt(`Enter your Email`);
 
     if (userEmail === null) {
       alert("Form canceled");
@@ -121,51 +121,51 @@ function validateUser() {
   // Password validation loop
   while (true) {
     userPassword = prompt("Create new password");
-    
+
     if (userPassword === null) {
       alert("Form canceled");
       return false;
     }
-    
+
     if (validateuserPassword(userPassword)) {
       break;
     }
-    
+
     alert(
       `Please password most have at least 8 characters, with one uppercase letter |A-Z|, one number |0-9|, and one special character |!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?|.`
     );
   }
 
-  // Age validation loop
-  while (true) {
-    userAge = prompt("How old are you");
-    
-    if (userAge === null) {
-      alert("Form canceled");
-      return false;
-    }
-    
-    if (validateAge(userAge)) {
-      break;
-    }
-    
-    alert("You must be at least 18 years or older to submit this form");
-  }
-
   // Password confirmation loop
   while (true) {
     confirmPassword = prompt(`Confirm your password`);
-    
+
     if (confirmPassword === null) {
       alert("Form canceled");
       return false;
     }
-    
+
     if (confirmUserPassword(confirmPassword)) {
       break;
     }
-    
+
     alert("Not correct. Must match the Password field.");
+  }
+
+  // Age validation loop
+  while (true) {
+    userAge = prompt("How old are you");
+
+    if (userAge === null) {
+      alert("Form canceled");
+      return false;
+    }
+
+    if (validateAge(userAge)) {
+      break;
+    }
+
+    alert("You must be at least 18 years or older to submit this form");
   }
 
   // All validations passed
