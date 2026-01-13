@@ -20,7 +20,7 @@ function validateUser() {
     return words.length >= 2;
   }
 
-  // This helper function validates the email format
+  // This is a helper function validates the email format
   function validateUserEmail(email) {
     if (!email || email === "") {
       return false;
